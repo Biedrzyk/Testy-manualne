@@ -1,0 +1,115 @@
+Nie pojawia się komunikat walidacyjny przy polu "Confirm password"
+
+Opis
+Przy pierwszym uruchomieniu aplikacji, pojawił się formularz tworzenia konta admina z dostępnymi polami 
+•	Username
+•	Password
+•	Confirm password
+gdzie przy wymaganym polu '“ Confirm password” nie pojawia się komunikat walidacyjny.
+Lista kroków do reprodukcji:
+1.	Otwieramy aplikację MrBuggy 7
+2.	Klikamy przycisk “Save”
+
+Rzeczywisty rezultat:
+Przy polu “Confirm password” nie pojawił się komunikat walidacyjny “This field is required”.
+
+Oczekiwany rezultat:
+Przy polu “Confirm password” pojawia się również komunikat walidacyjny, w przypadku gdy użytkownik nie uzupełni pola o treści “This field is required”.
+
+Załącznik:
+Niestety brak jest możliwości załączenia zdjęcia obrazującego jak dokładnie możemy odtworzyć znaleziony błąd.
+
+
+
+Przy pierwszym formularzu tworzenia konta administratora brakuje wymaganych pól
+
+Podczas tworzenia nowego konta administratora, po pierwszym uruchomieniu aplikacji, brak jest możliwości wprowadzenia wymaganych pól takich jak:
+1.	First Name
+2.	Last Name
+3.	Email
+4.	Phone number
+
+Załącznik:
+Niestety brak jest możliwości załączenia zdjęcia obrazującego jak dokładnie możemy odtworzyć znaleziony błąd.
+
+
+
+Wyszukiwarka dostawców "Providers" nie uwzględnia znaków spacji
+
+Wyszukiwarka z zakładki Providers nie uwzględnia podanych przez użytkownika (szukającego) znaków spacji.
+To powoduje, że dodani providerzy nie posiadające znaków spacji są uwzględniane w wynikach wyszukiwania dla których fraza zawiera spację.
+Lista kroków do reprodukcji:
+1.	Przechodzimy do zakładki providers
+2.	Tworzymy nowy provider z nazwą “TEST” i ceną 123
+3.	Tworzymy kolejny nowy provider z nazwą “TEST 2” i ceną 120
+4.	W polu wyszukiwania wpisujemy frazę “TEST “
+
+Rzeczywisty rezultat:
+Zostały przedstawione oba rezultaty ze znakiem spacji i bez niego.
+
+Oczekiwane zachowanie:
+Powinny zostać przefiltrowane tylko takie providery które posiadają znak spacji.
+
+Załącznik:
+Niestety brak jest możliwości załączenia filmiku obrazującego jak dokładnie możemy odtworzyć znaleziony błąd.
+
+
+
+Wyszukiwarka nie uwzględnia polskich znaków
+
+W zakładce Providers wyszukiwarka nie uwzględnia polskich znaków. W rezultacie providersy które zawierają polskie znaki taki jak np. ź, ć czy ą nie będą przedstawione w tabelce.
+ 
+Lista kroków do reprodukcji:
+1.	Przechodzimy do zakładki Providers
+2.	Tworzymy nowy Provider zawierający w polu name polski znam np. “BOĆAN”
+3.	W wyszukiwarkę wpisujemy frazę “BOĆAN”
+
+Rzeczywisty rezultat:
+W tabelce dopisany wcześniej provider nie pojawia się na liście.
+
+Oczekiwany rezultat:
+Wyszukiwarka powinna uwzględniać polskie znaki i prezentować w tabelce faktyczny rezultat.
+
+Załącznik:
+Niestety brak jest możliwości załączenia filmiku obrazującego jak dokładnie możemy odtworzyć znaleziony błąd.
+
+
+
+Po kliknięciu w ikonkę "X" lista prezentowanych wyników nie jest odświeżana.
+
+W zakładce Providers po kliknięciu w ikonkę “X” przy wpisanej frazie wyszukiwania nie jest odświeżana lista wyników prezentowanych w tabelce.
+Lista kroków do reprodukcji:
+1.	Przechodzimy do zakładki Providers
+2.	Dodajemy jeden dowolny Provider: nazwa dowolna, cena dowolna
+3.	W polu wyszukiwania wpisujemy frazę niepokrywającą się z providerem, który w kroku wcześniejszym stworzyliśmy. 
+4.	Klikamy w ikonkę “X” w inpucie wyszukiwana.
+
+Rzeczywisty rezultat:
+Mimo, że fraza po której ma odbywać się filtrowanie została usunięta to w tabelce nie ma przedstawionych wszystkich rezultatów.
+
+Oczekiwane zachowanie:
+Po usunięciu frazy z pola wyszukiwania powinny być prezentowane wszystkie wyniki dostępne w tabelce providers.
+ 
+Załącznik:
+Niestety brak jest możliwości załączenia filmiku obrazującego jak dokładnie możemy odtworzyć znaleziony błąd.
+
+
+
+Przycisk w zakładce "Units" nie jest responsywny na powiększonym ekranie aplikacji
+
+Po przejściu do zakładki “Units” oraz po powiększeniu obszaru aplikacji za pomocą kombinacji CTRL + “+” przycisk “Clear” wychodzi poza obszar kontenera (boxa)
+ 
+Lista kroków do reprodukcji:
+1.	Otworzenie aplikacji
+2.	Zalogowanie się na konto administratora
+3.	Przechodzimy do zakładki units
+4.	Klikamy kilka razy kombinację klawiszy CTRL + “+” lub CTRL + scroll myszki w górę
+
+Rzeczywisty rezultat:
+Przycisk czyszczący pole wyszukiwania 'Clear” wychodzi poza kontener.
+
+Oczekiwane zachowanie:
+Przycisk “Clear: powinien zachowywać responsywność na większym powiększeniu przeglądarki i dopasowywać się do szerokości kontenera w którym się znajduje.
+ 
+Załącznik:
+Niestety brak jest możliwości załączenia zdjęcia obrazującego jak dokładnie możemy odtworzyć znaleziony błąd.
